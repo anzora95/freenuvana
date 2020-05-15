@@ -1,7 +1,7 @@
 function modalhelp(){
     Swal.fire({
         text: 'Please check your order number and try again later!',
-        footer: '<a class="clickable" onclick="" >Order number not working?</a>',
+        footer: '<a class="clickable" href="mailto:contact@nuvananutrition.com" >Order number not working?</a>',
     });
 }
 

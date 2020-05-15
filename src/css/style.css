@@ -267,7 +267,7 @@ padding: 15px 80px 15px 80px;
   margin-bottom: 30px;
 }
 .banner{
-    background: url("../img/dark-banner.png") no-repeat  ; 
+    background: url("../img/banner-pruincipal_2.png") no-repeat  ;
     background-position: 50%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -339,7 +339,7 @@ padding: 15px 80px 15px 80px;
 
 /* STEPS */
 .steps{
-    padding: 100px 0px 100px 0px;
+    padding: 70px 0px 100px 0px;
 }
 .three-steps{
 margin: 70px 0 0 0;
@@ -539,10 +539,4 @@ p.footer-text{
     .testimonial-3{
         display: none ;
     }
-
-    /*h2.swal2-title{*/
-
-    /*    font-size: 10px;*/
-
-    /*}*/
 }

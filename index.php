@@ -24,40 +24,39 @@ $_SESSION["verification"]=20;
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 			<!-- OWN CSS -->
 			<link rel="stylesheet" href="src/css/style.css" >
-    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
 				<title>New page!</title>
 			</head>
 			<body>
-				<?php
+			<?php
             include('src/includes/header.php');
             ?>
 				<section class="section-banner" id="banner">
 					<div class="container-fluid banner">
 						<div class="row banner-row">
-							<div class="col-md-5  left-section-banner">
+							<div class="col-md-5  left-section-banner" style="margin-top: 40px">
 								<div class="container lft-container">
 								<h1 class="h1-banner">GET A FREE BOTTLE ON US</h1>
 								<h4 class="text-center">after actively taking our product for at least 7 days.*<br/>
-No Credit Card Required - Free Shipping! </h4>
+                                No Credit Card Required - Free Shipping! </h4>
 <br>
 								<h6 class="justified" >*Following Conditions Apply: Customer agrees to share their honest feedback with us on our product after actively using for at least 7 days. 
-    Limited to one free travel-sized bottle per product review, per household. 
-    The travel-sized product offering will be selected by Nuvana Nutrition. Offer valid while supplies last. 
-    This offer is NOT contingent on leaving a review on any website. Product must have been purchased through Amazon.com or NuvanaNutrition.com. </h6></div>
+                                    Limited to one free travel-sized bottle per product review, per household.
+                                    The travel-sized product offering will be selected by Nuvana Nutrition. Offer valid while supplies last.
+                                    This offer is NOT contingent on leaving a review on any website. Product must have been purchased through Amazon.com or NuvanaNutrition.com. </h6></div>
 							</div>
 							<div class="col-md-2"></div>
-							<div class="col-md-5 text-center right-section-banner" >
+							<div class="col-md-5 text-center right-section-banner" style="margin-top: 70px" >
 								<div class="container rgh-container">
 								<div class="overlay">
 									<h2>Share your HONEST feedback with us and we'll send you a FREE
-travel-sized bottle of one of our best-selling products!
+                                        travel-sized bottle of one of our best-selling products!
 									</h2>
 									<form  onsubmit="return firstForm()"  action="session.php" method="POST">
 										<div class="form-group">
 											<input type="text" class="form-control" id="fullname" name="fullname" aria-describedby="full name" placeholder="Full Name">
 											</div>
 											<div class="form-group">
-												<input type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="Email" onkeydown="validation()">
+												<input type="email" class="form-control" id="email" name="email" aria-describedby="email" placeholder="Email">
 												</div>
 
 												<div class="form-group">
@@ -133,39 +132,5 @@ travel-sized bottle of one of our best-selling products!
 												<?php
                								include('src/includes/footer.php');
               							 ?>
-
-                <script type="text/javascript">
-
-                   function validation() {
-
-                       var email= document.getElementById("email").value;
-                       var pattern= /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
-
-                       if(email.match(pattern))
-                       {
-                           console.log("its all");
-                           text.innerHTML = "Your Email Address is valid";
-                           text.style.color="00ff00";
-
-                       }
-                       // else{
-                       //     console.log("not valid email");
-                       //     text.innerHTML = "Please Enter Valid Email";
-                       //     text.style.color="ff0000";
-                       //
-                       // }
-
-                       if(email == "")
-                       {
-                           console.log("its all");
-                           text.innerHTML = "";
-                           text.style.color="00ff00";
-
-                       }
-
-                   }
-
-
-                </script>
 											</body>
 										</html>
